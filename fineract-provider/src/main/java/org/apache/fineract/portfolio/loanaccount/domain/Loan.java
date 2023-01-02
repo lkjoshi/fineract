@@ -6696,6 +6696,7 @@ public class Loan extends AbstractAuditableWithUTCDateTimeCustom {
 //                    getId());
 //        }
 
+
         LocalDate lastUserTransactionDate = getLastUserTransactionDate();
 
         if (DateUtils.isDateInTheFuture(transactionDate)) {
