@@ -940,6 +940,15 @@ public class CommandWrapperBuilder {
         return this;
     }
 
+    public CommandWrapperBuilder igLoanForeclosure(final Long loanId) {
+        this.actionName = "IG_FORECLOSURE";
+        this.entityName = "LOAN";
+        this.entityId = null;
+        this.loanId = loanId;
+        this.href = "/loans/" + loanId + "/transactions?command=ig_foreclosure";
+        return this;
+    }
+
     public CommandWrapperBuilder creditBalanceRefund(final Long loanId) {
         this.actionName = "CREDITBALANCEREFUND";
         this.entityName = "LOAN";
