@@ -105,6 +105,7 @@ public class LoanTransactionHelper extends IntegrationTest {
     private static final String RECOVER_FROM_GUARANTORS_COMMAND = "recoverGuarantees";
     private static final String MAKE_REFUND_BY_CASH_COMMAND = "refundByCash";
     private static final String FORECLOSURE_COMMAND = "foreclosure";
+    private static final String IG_FORECLOSURE_COMMAND = "ig_foreclosure";
     private static final Gson GSON = new JSON().getGson();
     private final RequestSpecification requestSpec;
     private final ResponseSpecification responseSpec;

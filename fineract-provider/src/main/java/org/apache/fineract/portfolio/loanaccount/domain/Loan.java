@@ -6690,11 +6690,12 @@ public class Loan extends AbstractAuditableWithUTCDateTimeCustom {
 
     public void validateForForeclosure(final LocalDate transactionDate) {
 
-        if (isInterestRecalculationEnabledForProduct()) {
-            final String defaultUserMessage = "The loan with interest recalculation enabled cannot be foreclosed.";
-            throw new LoanForeclosureException("loan.with.interest.recalculation.enabled.cannot.be.foreclosured", defaultUserMessage,
-                    getId());
-        }
+//        if (isInterestRecalculationEnabledForProduct()) {
+//            final String defaultUserMessage = "The loan with interest recalculation enabled cannot be foreclosed.";
+//            throw new LoanForeclosureException("loan.with.interest.recalculation.enabled.cannot.be.foreclosured", defaultUserMessage,
+//                    getId());
+//        }
+
 
         LocalDate lastUserTransactionDate = getLastUserTransactionDate();
 
